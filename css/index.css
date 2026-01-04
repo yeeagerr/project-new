@@ -1,0 +1,47 @@
+.orbitron-font {
+  font-family: "Orbitron", sans-serif;
+  font-style: normal;
+}
+
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+}
+
+.montserrat-font {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+}
+
+.poppins-font {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+
+p,
+h1,
+h2,
+a {
+  color: white;
+}
+
+/* CUSTOM */
+#statsheader {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+  height: 600px;
+  align-items: center;
+}
+@media only screen and (max-width: 1024px) {
+  #statsheader {
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.accordion-content {
+  transition: max-height 0.3s ease-in-out;
+  overflow: hidden;
+}

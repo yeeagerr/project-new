@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="/css/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Orbitron:wght@400..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-[#1B1B1B]">
+    <nav
+      class="flex justify-between items-center py-5 px-4 sm:px-0 mx-auto w-[95%] max-w-[1200px]"
+    >
+      <input type="radio" name="menu" id="menu-open" class="hidden peer/open" />
+      <input
+        type="radio"
+        name="menu"
+        id="menu-close"
+        class="hidden peer/close"
+        checked
+      />
+
+      <div class="flex items-center gap-[4rem]">
+        <h1 class="inter-font text-white text-2xl">LOGO</h1>
+
+        <!-- Desktop Menu -->
+        <div class="hidden lg:flex items-center gap-7">
+          <a
+            href=""
+            class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+            >About</a
+          >
+          <a
+            href=""
+            class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+            >Service</a
+          >
+          <a
+            href=""
+            class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+            >Project</a
+          >
+          <a
+            href=""
+            class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+            >Blog</a
+          >
+        </div>
+      </div>
+
+      <button
+        class="hidden lg:flex background-transparent py-2 px-5 text-sm text-white border-white border items-center justify-center gap-3 rounded-sm"
+      >
+        Contact Us
+        <svg
+          class="p-0 m-0 w-[1.2rem] h-[1.2rem]"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M4 12H20M20 12L14 6M20 12L14 18"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </button>
+
+      <!-- Burger Button (Mobile) -->
+      <label
+        for="menu-open"
+        class="lg:hidden peer-checked/open:hidden cursor-pointer z-50"
+      >
+        <svg
+          class="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16M4 18h16"
+          />
+        </svg>
+      </label>
+
+      <label
+        for="menu-close"
+        class="lg:hidden hidden peer-checked/open:block cursor-pointer z-50"
+      >
+        <svg
+          class="w-6 h-6 text-white"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </label>
+
+      <!-- Mobile Menu -->
+      <div
+        class="hidden peer-checked/open:flex lg:hidden fixed top-0 left-0 w-full h-screen bg-black bg-opacity-95 flex-col items-center justify-center gap-8 z-40"
+      >
+        <a
+          href=""
+          class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+          >About</a
+        >
+        <a
+          href=""
+          class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+          >Service</a
+        >
+        <a
+          href=""
+          class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+          >Project</a
+        >
+        <a
+          href=""
+          class="text-[#7D7D7D] hover:text-white transition font-semibold uppercase tracking-widest montserrat-font text-sm"
+          >Blog</a
+        >
+
+        <button
+          class="background-transparent py-2 px-5 text-sm text-white border-white border flex items-center justify-center gap-3 rounded-sm mt-4"
+        >
+          Contact Us
+          <svg
+            class="p-0 m-0 w-[1.2rem] h-[1.2rem]"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4 12H20M20 12L14 6M20 12L14 18"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- <img draggable="false"
+      src="/image/web 1920x550.png"
+      alt="Background Pijara"
+      class="absolute z-[0]"
+    /> -->
+    <!-- CONTENT PAGE -->
+    <div class="mx-auto w-[95%] max-w-[1200px] m-5 relative z-[2]">
+      <!-- MOBILE/TABLET LAYOUT (< 1024px) -->
+      <div class="block lg:hidden">
+        <!-- Header Section Mobile -->
+        <div class="text-center mb-8">
+          <h1
+            class="poppins-font text-5xl sm:text-6xl md:text-7xl font-semibold mb-4"
+          >
+            Creative
+          </h1>
+          <div class="flex justify-center mb-6">
+            <div class="w-[180px] sm:w-[220px] md:w-[260px]">
+              <img
+                draggable="false"
+                class="object-cover w-full h-full"
+                src="/image/logo 270x80px.png"
+                alt="Logo Pijara"
+              />
+            </div>
+          </div>
+          <h1
+            class="poppins-font text-4xl sm:text-5xl md:text-6xl font-semibold mb-6"
+          >
+            Collaborative Entity
+          </h1>
+          <p
+            class="montserrat-font text-sm sm:text-base max-w-[600px] mx-auto px-4"
+          >
+            PIJARA tumbuh lewat kolaborasi. Kami senang bekerja bareng studio,
+            kreator, dan orang-orang yang punya semangat yang sama. Dengan
+            saling bertukar ide dan jalan bareng, kami percaya hasilnya bisa
+            jauh lebih besar dibandingkan berjalan sendiri.
+          </p>
+        </div>
+
+        <!-- Image First on Mobile -->
+        <div class="mb-6">
+          <div
+            class="h-[250px] sm:h-[300px] md:h-[350px] rounded-xl overflow-hidden"
+          >
+            <img
+              draggable="false"
+              src="/image/IMG_6104.JPG"
+              alt="Contoh"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+
+        <!-- Buttons Grid on Mobile -->
+        <div class="grid grid-cols-2 gap-3 sm:gap-4">
+          <button
+            class="montserrat-font bg-[#2C2C2C] text-[gray] py-5 sm:py-6 px-4 sm:px-6 text-base sm:text-lg hover:bg-white hover:text-[black] transition rounded-xl"
+          >
+            About Us
+          </button>
+          <button
+            class="montserrat-font bg-[#2C2C2C] text-[gray] py-5 sm:py-6 px-4 sm:px-6 text-base sm:text-lg hover:bg-white hover:text-[black] transition rounded-xl"
+          >
+            Our Services
+          </button>
+          <button
+            class="montserrat-font bg-[#2C2C2C] text-[gray] py-5 sm:py-6 px-4 sm:px-6 text-base sm:text-lg hover:bg-white hover:text-[black] transition rounded-xl"
+          >
+            Our Project
+          </button>
+          <button
+            class="montserrat-font bg-[#2C2C2C] text-[gray] py-5 sm:py-6 px-4 sm:px-6 text-base sm:text-lg hover:bg-white hover:text-[black] transition rounded-xl"
+          >
+            Client Says
+          </button>
+        </div>
+      </div>
+
+      <!-- DESKTOP LAYOUT (>= 1024px) -->
+      <div class="hidden lg:block">
+        <div class="flex items-center justify-between flex-wrap">
+          <h1 class="poppins-font text-[5.7rem] font-semibold">Creative</h1>
+          <p class="montserrat-font text-sm w-[40rem]">
+            PIJARA tumbuh lewat kolaborasi. Kami senang bekerja bareng studio,
+            kreator, dan orang-orang yang punya semangat yang sama. Dengan
+            saling bertukar ide dan jalan bareng, kami percaya hasilnya bisa
+            jauh lebih besar dibandingkan berjalan sendiri.
+          </p>
+        </div>
+        <div
+          class="flex items-center flex-wrap-reverse justify-between mt-[-20px]"
+        >
+          <div class="w-[250px]">
+            <img
+              draggable="false"
+              class="object-cover w-full h-full"
+              src="/image/logo 270x80px.png"
+              alt="Logo Pijara"
+            />
+          </div>
+          <h1 class="poppins-font text-[5.7rem] font-semibold">
+            Collaborative Entity
+          </h1>
+        </div>
+
+        <!-- CONTENT HEADER -->
+        <div class="flex flex-col-reverse sm:flex-row items-center gap-3 mt-5">
+          <div class="flex flex-row sm:flex-col flex-col gap-3 h-[25rem]">
+            <button
+              class="montserrat-font h-full w-full bg-[#2C2C2C] text-[gray] py-6 px-[3rem] text-xl hover:bg-white hover:text-[black] transition rounded-xl"
+            >
+              About Us
+            </button>
+            <button
+              class="montserrat-font h-full w-full bg-[#2C2C2C] text-[gray] py-6 px-9 text-xl hover:bg-white hover:text-[black] transition rounded-xl"
+            >
+              Our Services
+            </button>
+            <button
+              class="montserrat-font h-full w-full bg-[#2C2C2C] text-[gray] py-6 px-9 text-xl hover:bg-white hover:text-[black] transition rounded-xl"
+            >
+              Our Project
+            </button>
+            <button
+              class="montserrat-font h-full w-full bg-[#2C2C2C] text-[gray] py-6 px-9 text-xl hover:bg-white hover:text-[black] transition rounded-xl"
+            >
+              Client Says
+            </button>
+          </div>
+          <div class="flex-1 h-[25rem] rounded-xl overflow-hidden">
+            <img
+              draggable="false"
+              src="/image/IMG_6104.JPG"
+              alt="Contoh"
+              class="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- LOGO / TRUSTED SECTION -->
+    <div class="mx-auto w-[95%] max-w-[1200px] relative z-[2]">
+      <h1
+        class="poppins-font text-center text-2xl font-bold tracking-wider mb-2 text-white"
+      >
+        Trusted <span class="text-red-600">By</span>
+      </h1>
+
+      <marquee
+        behavior="scroll"
+        direction="left"
+        scrollamount="6"
+        onmouseover="this.stop();"
+        onmouseout="this.start();"
+      >
+        <div class="flex items-center gap-[5rem] h-[80px]">
+          <img
+            draggable="false"
+            src="/image/TACITAWHITE-P5ZlGlOpRkC17CSvQpo_eg.png"
+            class="h-[50px] w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 hover:brightness-100 transition-all duration-300"
+          />
+
+          <div class="flex items-center gap-6">
+            <div class="h-10 w-px bg-gray-300"></div>
+            <img src="/image/IMG_0011.PNG" alt="API Logo" class="h-8 w-auto" />
+            <div class="h-10 w-px bg-gray-300"></div>
+          </div>
+
+          <img
+            draggable="false"
+            src="/image/pt_patria_maritim_perkasa_logo-zYzRZPoTIDvcSYrHMEVfUg.jpg"
+            class="h-[50px] w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+          />
+
+          <div class="flex items-center gap-6">
+            <div class="h-10 w-px bg-gray-300"></div>
+            <img src="/image/IMG_0011.PNG" alt="API Logo" class="h-8 w-auto" />
+            <div class="h-10 w-px bg-gray-300"></div>
+          </div>
+
+          <img
+            draggable="false"
+            src="/image/LOGOKSQUARE2-ndbpeknSt1HGHw_kuzsdag.png"
+            class="h-[50px] w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 hover:brightness-100 transition-all duration-300"
+          />
+
+          <div class="flex items-center gap-6">
+            <div class="h-10 w-px bg-gray-300"></div>
+            <img src="/image/IMG_0011.PNG" alt="API Logo" class="h-8 w-auto" />
+            <div class="h-10 w-px bg-gray-300"></div>
+          </div>
+
+          <img
+            draggable="false"
+            src="/image/filecopy-qOqX9hGV2AFzyB5bndovjQ.jpg"
+            class="h-[50px] w-auto object-contain grayscale opacity-70 hover:grayscale-0 hover:opacity-100 transition-all duration-300"
+          />
+        </div>
+      </marquee>
+    </div>
+  </body>
+</html>
