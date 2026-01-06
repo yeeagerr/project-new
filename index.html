@@ -317,7 +317,7 @@
       </div>
     </div>
     <!-- LOGO / TRUSTED SECTION -->
-    <div class="mx-auto w-[95%] max-w-[1200px] relative z-[2] mt-10">
+    <div class="mx-auto w-[95%] max-w-[1200px] relative z-[2] my-10">
       <h1
         class="poppins-font text-center text-2xl font-bold tracking-wider mb-2 text-white"
       >
@@ -378,15 +378,17 @@
     </div>
 
     <!-- ABOUT US -->
-    <div class="mx-auto w-[95%] max-w-[1200px] relative z-[2] my-10">
-      <div class="flex items-center justify-between gap-10">
-        <h1
-          class="poppins-font text-[4rem] whitespace-nowrap font-bold tracking-wider"
-        >
+    <div class="mx-auto w-[95%] max-w-[1200px] relative z-[2] mb-12">
+      <!-- Header Section -->
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-10">
+        <h1 class="poppins-font text-5xl lg:text-[4rem] whitespace-nowrap font-bold tracking-wider">
           About <span class="text-[red]">Us</span>
         </h1>
-        <div class="border border-2 border-[red] rounded-xl w-[40%]"></div>
-        <p class="montserrat-font text-justify">
+        <!-- Divider -->
+        <div class="border-2 border-[red] rounded-xl w-full lg:w-[40%] hidden lg:block"></div>
+        <div class="border-2 border-[red] rounded-xl w-20 block lg:hidden"></div>
+        
+        <p class="montserrat-font text-justify text-sm lg:text-base w-full lg:w-auto">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
           tenetur iusto. Non optio ad pariatur, repellendus sit recusandae sed
           quisquam rem cupiditate eum doloribus ducimus magnam, ut cum ea
@@ -394,49 +396,33 @@
         </p>
       </div>
 
-      <div class="flex items-center justify-between gap-3 mt-5">
-        <div
-          class="border h-[34rem] flex-[500px] rounded-lg overflow-hidden"
-        ></div>
-        <div
-          class="h-auto flex-[50px] flex flex-col items-center justify-start gap-5 max-w-2xl mx-auto"
-        >
-          <div
-            class="accordion-item bg-[#2C2C2C] p-5 w-full rounded-xl cursor-pointer"
-            data-active="true"
-          >
+      <!-- Content Section -->
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-8 lg:gap-3 mt-10 lg:mt-5">
+        <!-- Image / Left Column -->
+        <div class="border h-[20rem] lg:h-[34rem] w-full lg:flex-[0_0_500px] rounded-lg overflow-hidden bg-gray-100">
+            <!-- Placeholder visual -->
+        </div>
+
+        <!-- Accordion / Right Column -->
+        <div class="h-auto w-full lg:flex-1 flex flex-col items-center justify-start gap-5 max-w-2xl mx-auto">
+          
+          <!-- Item 1 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="true">
             <div class="accordion-header flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <p
-                  class="accordion-number m-0 p-0 poppins-font font-semibold text-5xl text-[#EF815E]"
-                >
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-[#EF815E]">
                   10
                 </p>
-                <p
-                  class="accordion-title m-0 p-0 poppins-font leading-tight text-[#EF815E]"
-                >
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-[#EF815E] text-sm lg:text-base">
                   Year Of <br />
                   Experience
                 </p>
               </div>
-              <svg
-                class="accordion-icon w-[2rem] mr-5 transition-all duration-300 text-[#EF815E]"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18 15L12 9L6 15"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 text-[#EF815E]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div
-              class="accordion-content overflow-hidden transition-all duration-300 max-h-[500px]"
-            >
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-[500px]">
               <p class="montserrat-font mt-5 text-justify text-sm text-white">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
                 hic rerum quibusdam vel minus doloribus impedit dolores
@@ -446,42 +432,23 @@
             </div>
           </div>
 
-          <div
-            class="accordion-item bg-[#2C2C2C] p-5 w-full rounded-xl cursor-pointer"
-            data-active="false"
-          >
+          <!-- Item 2 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="false">
             <div class="accordion-header flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <p
-                  class="accordion-number m-0 p-0 poppins-font font-semibold text-5xl text-gray-500"
-                >
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-gray-500">
                   50
                 </p>
-                <p
-                  class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500"
-                >
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500 text-sm lg:text-base">
                   Project <br />
                   Completed
                 </p>
               </div>
-              <svg
-                class="accordion-icon w-[2rem] mr-5 transition-all duration-300 rotate-180 text-gray-500"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18 15L12 9L6 15"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 rotate-180 text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div
-              class="accordion-content overflow-hidden transition-all duration-300 max-h-0"
-            >
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
               <p class="montserrat-font mt-5 text-justify text-sm text-white">
                 Kami telah menyelesaikan lebih dari 50 proyek untuk berbagai
                 klien di seluruh dunia. Setiap proyek dikerjakan dengan dedikasi
@@ -490,42 +457,23 @@
             </div>
           </div>
 
-          <div
-            class="accordion-item bg-[#2C2C2C] p-5 w-full rounded-xl cursor-pointer"
-            data-active="false"
-          >
+          <!-- Item 3 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="false">
             <div class="accordion-header flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <p
-                  class="accordion-number m-0 p-0 poppins-font font-semibold text-5xl text-gray-500"
-                >
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-gray-500">
                   100
                 </p>
-                <p
-                  class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500"
-                >
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500 text-sm lg:text-base">
                   Happy <br />
                   Clients
                 </p>
               </div>
-              <svg
-                class="accordion-icon w-[2rem] mr-5 transition-all duration-300 rotate-180 text-gray-500"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18 15L12 9L6 15"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 rotate-180 text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div
-              class="accordion-content overflow-hidden transition-all duration-300 max-h-0"
-            >
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
               <p class="montserrat-font mt-5 text-justify text-sm text-white">
                 Kepuasan klien adalah prioritas utama kami. Dengan lebih dari
                 100 klien yang puas, kami terus berkomitmen memberikan layanan
@@ -534,42 +482,23 @@
             </div>
           </div>
 
-          <div
-            class="accordion-item bg-[#2C2C2C] p-5 w-full rounded-xl cursor-pointer"
-            data-active="false"
-          >
+          <!-- Item 4 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="false">
             <div class="accordion-header flex items-center justify-between">
               <div class="flex items-center gap-3">
-                <p
-                  class="accordion-number m-0 p-0 poppins-font font-semibold text-5xl text-gray-500"
-                >
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-gray-500">
                   100
                 </p>
-                <p
-                  class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500"
-                >
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500 text-sm lg:text-base">
                   Happy <br />
                   Clients
                 </p>
               </div>
-              <svg
-                class="accordion-icon w-[2rem] mr-5 transition-all duration-300 rotate-180 text-gray-500"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M18 15L12 9L6 15"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 rotate-180 text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
-            <div
-              class="accordion-content overflow-hidden transition-all duration-300 max-h-0"
-            >
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
               <p class="montserrat-font mt-5 text-justify text-sm text-white">
                 Kepuasan klien adalah prioritas utama kami. Dengan lebih dari
                 100 klien yang puas, kami terus berkomitmen memberikan layanan
@@ -577,6 +506,136 @@
               </p>
             </div>
           </div>
+
+        </div>
+      </div>
+    </div>
+
+        <!-- OUR SEVICES  -->
+    <div class="mx-auto w-[95%] max-w-[1200px] relative z-[2] mb-10">
+      <!-- Header Section -->
+      <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-6 lg:gap-10">
+        <h1 class="poppins-font text-5xl lg:text-[4rem] whitespace-nowrap font-bold tracking-wider">
+          Our <span class="text-[red]">Services</span>
+        </h1>
+        <!-- Divider -->
+        <div class="border-2 border-[red] rounded-xl w-full lg:w-[40%] hidden lg:block"></div>
+        <div class="border-2 border-[red] rounded-xl w-20 block lg:hidden"></div>
+        
+        <p class="montserrat-font text-justify text-sm lg:text-base w-full lg:w-auto">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores,
+          tenetur iusto. Non optio ad pariatur, repellendus sit recusandae sed
+          quisquam rem cupiditate eum doloribus ducimus magnam, ut cum ea
+          cumque.
+        </p>
+      </div>
+
+      <!-- Content Section -->
+      <div class="flex flex-col lg:flex-row items-stretch lg:items-center justify-between gap-8 lg:gap-3 mt-10 lg:mt-5">
+        <!-- Accordion / Right Column -->
+        <div class="h-auto w-full lg:flex-1 flex flex-col items-center justify-start gap-5 mx-auto">
+          
+          <!-- Item 1 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="true">
+            <div class="accordion-header flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-[#EF815E]">
+                  10
+                </p>
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-[#EF815E] text-sm lg:text-base">
+                  Year Of <br />
+                  Experience
+                </p>
+              </div>
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 text-[#EF815E]" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-[500px]">
+              <p class="montserrat-font mt-5 text-justify text-sm text-white">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias
+                hic rerum quibusdam vel minus doloribus impedit dolores
+                reprehenderit quidem, expedita ex, quisquam modi quas recusandae
+                nam, sequi maiores nihil dicta!
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="false">
+            <div class="accordion-header flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-gray-500">
+                  50
+                </p>
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500 text-sm lg:text-base">
+                  Project <br />
+                  Completed
+                </p>
+              </div>
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 rotate-180 text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+              <p class="montserrat-font mt-5 text-justify text-sm text-white">
+                Kami telah menyelesaikan lebih dari 50 proyek untuk berbagai
+                klien di seluruh dunia. Setiap proyek dikerjakan dengan dedikasi
+                tinggi dan hasil yang memuaskan.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="false">
+            <div class="accordion-header flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-gray-500">
+                  100
+                </p>
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500 text-sm lg:text-base">
+                  Happy <br />
+                  Clients
+                </p>
+              </div>
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 rotate-180 text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+              <p class="montserrat-font mt-5 text-justify text-sm text-white">
+                Kepuasan klien adalah prioritas utama kami. Dengan lebih dari
+                100 klien yang puas, kami terus berkomitmen memberikan layanan
+                terbaik.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item bg-[#2C2C2C] p-4 lg:p-5 w-full rounded-xl cursor-pointer" data-active="false">
+            <div class="accordion-header flex items-center justify-between">
+              <div class="flex items-center gap-3">
+                <p class="accordion-number m-0 p-0 poppins-font font-semibold text-4xl lg:text-5xl text-gray-500">
+                  100
+                </p>
+                <p class="accordion-title m-0 p-0 poppins-font leading-tight text-gray-500 text-sm lg:text-base">
+                  Happy <br />
+                  Clients
+                </p>
+              </div>
+              <svg class="accordion-icon w-[1.5rem] lg:w-[2rem] mr-2 lg:mr-5 transition-all duration-300 rotate-180 text-gray-500" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18 15L12 9L6 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div class="accordion-content overflow-hidden transition-all duration-300 max-h-0">
+              <p class="montserrat-font mt-5 text-justify text-sm text-white">
+                Kepuasan klien adalah prioritas utama kami. Dengan lebih dari
+                100 klien yang puas, kami terus berkomitmen memberikan layanan
+                terbaik.
+              </p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
